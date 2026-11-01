@@ -1,11 +1,14 @@
 # Minimalist Personal Portfolio
 
-Minimalist personal portfolio with hero section, project showcase grid, and contact links.
+A sleek, responsive single-page personal developer portfolio built with semantic HTML5, modern CSS3, and Vanilla JavaScript.
 
 ## Features
-- Clean modern architecture with semantic HTML5
-- Responsive CSS custom properties styling
-- Interactive JavaScript component state
+- **Hero & Status Header:** Clean introduction with availability badge and gradient accent text.
+- **Skills Matrix:** Categorized cards highlighting frontend expertise (HTML5, Modern CSS, Vanilla JS, Git/GitHub).
+- **Featured Projects Showcase:** Responsive grid displaying recent projects with tech tags and direct repository links.
+- **About & Statistics:** Clean developer background summary with key metrics.
+- **Interactive Contact Section:** Working message form interface and quick contact links.
+- **Mobile Responsive:** Collapsible mobile hamburger navigation menu and adaptive grid layouts.
 
 ## Preview
 Open `index.html` in your browser.

@@ -3,36 +3,262 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minimalist Personal Portfolio</title>
+  <title>Arafat Jamil | Frontend &amp; Web Developer</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="app-container">
-    <header class="header">
-      <span class="badge">Web Project</span>
-      <h1>Minimalist Personal Portfolio</h1>
-      <p class="subtitle">Minimalist personal portfolio with hero section, project showcase grid, and contact links.</p>
-    </header>
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">Arafat<span>.dev</span></a>
 
-    <main class="content-card">
-      <div class="card-inner">
-        <h2>Interactive Showcase</h2>
-        <p>A responsive component implemented with clean architecture and modern web standards.</p>
-        
-        <div class="action-row">
-          <button class="btn btn-primary" id="actionBtn">Interact</button>
-          <span class="counter-display" id="counterText">Clicked: 0 times</span>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://github.com/ArafatJamil254" target="_blank" rel="noopener" class="nav-btn">GitHub Profile &rarr;</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-container">
+      <div class="status-badge">
+        <span class="status-dot"></span> Available for projects &amp; collaborations
+      </div>
+      <h1 class="hero-title">
+        Building modern, clean &amp; <span class="gradient-text">responsive web experiences.</span>
+      </h1>
+      <p class="hero-bio">
+        Hi, I'm <strong>Arafat Jamil</strong>. A frontend developer dedicated to writing clean code, crafting accessible web interfaces, and building practical digital tools.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills-section" id="skills">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Expertise</span>
+        <h2>Skills &amp; Technologies</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>HTML5 &amp; Modern CSS</h3>
+          <p>Semantic markup, CSS Grid, Flexbox layouts, CSS variables, and modern responsive design.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>Vanilla JavaScript</h3>
+          <p>DOM manipulation, event handling, asynchronous programming (Fetch/Async), and state management.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🛠️</div>
+          <h3>Git &amp; GitHub</h3>
+          <p>Version control, branching workflows, pull requests, conventional commits, and automation.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">📱</div>
+          <h3>Responsive &amp; Accessible</h3>
+          <p>Mobile-first UI development, WCAG accessibility standards, and cross-browser testing.</p>
         </div>
       </div>
-    </main>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <p>Built with HTML5, CSS3, Flexbox/Grid &bull; 2026</p>
-    </footer>
-  </div>
+  <!-- Projects Section -->
+  <section class="projects-section" id="projects">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Portfolio</span>
+        <h2>Featured Projects</h2>
+        <p class="section-desc">A selection of recent web development projects and components.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: SaaS Pricing Table -->
+        <article class="project-card">
+          <div class="project-preview preview-saas">
+            <span class="project-tag">Web Component</span>
+          </div>
+          <div class="project-content">
+            <h3>SaaS Pricing Table Component</h3>
+            <p>Interactive 3-tier pricing matrix with monthly/annual billing discount toggle and responsive grid.</p>
+            <div class="tech-tags">
+              <span>HTML5</span>
+              <span>CSS Grid</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ArafatJamil254/responsive-pricing-matrix" target="_blank" rel="noopener" class="link-btn">Source Code &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Git & Terminal Cheatsheet -->
+        <article class="project-card">
+          <div class="project-preview preview-cheatsheet">
+            <span class="project-tag">Developer Tool</span>
+          </div>
+          <div class="project-content">
+            <h3>Git &amp; Terminal Cheatsheet</h3>
+            <p>Interactive reference grid with real-time command search, category filtering, and one-click copy.</p>
+            <div class="tech-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Clipboard API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ArafatJamil254/developer-cheatsheet-grid" target="_blank" rel="noopener" class="link-btn">Source Code &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: User Registration Form -->
+        <article class="project-card">
+          <div class="project-preview preview-auth">
+            <span class="project-tag">Form &amp; UI</span>
+          </div>
+          <div class="project-content">
+            <h3>Clean Registration Form</h3>
+            <p>Modern authentication onboarding card featuring real-time password strength meter and visibility toggle.</p>
+            <div class="tech-tags">
+              <span>HTML5</span>
+              <span>Form Validation</span>
+              <span>Vanilla JS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ArafatJamil254/modern-registration-form" target="_blank" rel="noopener" class="link-btn">Source Code &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Coffee Shop Menu -->
+        <article class="project-card">
+          <div class="project-preview preview-cafe">
+            <span class="project-tag">Landing UI</span>
+          </div>
+          <div class="project-content">
+            <h3>Coffee Shop Digital Menu</h3>
+            <p>Artisan cafe menu featuring category tab filtering, dotted leader lines, and typography pairings.</p>
+            <div class="tech-tags">
+              <span>HTML5</span>
+              <span>CSS Flexbox</span>
+              <span>Google Fonts</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ArafatJamil254/artisan-coffee-menu" target="_blank" rel="noopener" class="link-btn">Source Code &rarr;</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="section-container">
+      <div class="about-box">
+        <div class="about-text">
+          <span class="section-eyebrow">Background</span>
+          <h2>About Me</h2>
+          <p>
+            I am a web developer with a strong focus on clean code, progressive enhancement, and intuitive user experiences.
+          </p>
+          <p>
+            Whether creating responsive layouts from scratch or building interactive web components, I strive to write maintainable code and continuously expand my software engineering capabilities.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Semantic HTML &amp; Clean CSS</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">Daily</span>
+            <span class="stat-label">Git Commits &amp; Contributions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Connect</span>
+        <h2>Let's Work Together</h2>
+        <p class="section-desc">Have a question or want to collaborate? Send a message.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Name</label>
+              <input type="text" id="contactName" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email</label>
+              <input type="email" id="contactEmail" placeholder="your.email@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" rows="5" placeholder="How can I help you?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="contactSubmitBtn">Send Message</button>
+        </form>
+
+        <div class="contact-cards">
+          <a href="mailto:arafat.jamil32925@gmail.com" class="contact-item">
+            <span class="ci-icon">✉️</span>
+            <div>
+              <h4>Email</h4>
+              <p>arafat.jamil32925@gmail.com</p>
+            </div>
+          </a>
+          <a href="https://github.com/ArafatJamil254" target="_blank" rel="noopener" class="contact-item">
+            <span class="ci-icon">💻</span>
+            <div>
+              <h4>GitHub</h4>
+              <p>github.com/ArafatJamil254</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Arafat Jamil. Crafted with HTML5, CSS3 &amp; JavaScript.</p>
+      <a href="#hero" class="back-to-top">&uarr; Back to top</a>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
